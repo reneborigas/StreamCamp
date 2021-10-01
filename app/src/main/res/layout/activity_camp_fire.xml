@@ -1,0 +1,249 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.navii.streamcamp.ui.ui.VideoGridContainer
+        android:id="@+id/live_video_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></com.navii.streamcamp.ui.ui.VideoGridContainer>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2Slides"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.5"
+            android:background="@color/black"
+            android:orientation="horizontal">
+
+        </androidx.viewpager2.widget.ViewPager2>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="onLeaveClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/smores"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="50K"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/layout_round_bg_orange"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/live_name_board_icon2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/streamcamp_logo"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/live_name_board_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/layout_round_bg"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/live_name_board_icon"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/live_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="bottom"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Dr. Betty Chan"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/live_room_broadcaster_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="Advisor at Department of Health"
+            android:textAlignment="gravity"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/live_btn_push_stream"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="onPushStreamClicked"
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_follow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/live_btn_switch_camera"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:onClick="onSwitchCameraClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_switch_camera"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/btn_download_resources"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="onMoreClicked"
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_attachement"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/live_btn_mute_audio"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:onClick="onMuteAudioClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_audio_enabled"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/live_btn_mute_video"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:onClick="onMuteVideoClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_video_enabled"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/btnShareCampFire"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:onClick="onMuteVideoClicked"
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_share"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/btnSendStars"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/layout_round_bg_orange"
+            android:onClick="onMuteAudioClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_star_border_24"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/btnSendGifts"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:background="@drawable/layout_round_bg_orange"
+            android:onClick="onMuteAudioClicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_gifts"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

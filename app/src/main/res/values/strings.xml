@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">StreamCamp</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string-array name="string_array_resolutions">
+        <item>320x240</item>
+        <item>480x360</item>
+        <item>640x360</item>
+        <item>640x480</item>
+        <item>960x540</item>
+        <item>1280x720</item>
+    </string-array>
+
+    <string name="facebook_app_id">919298892270515</string>
+    <string name="fb_login_protocol_scheme">fb919298892270515</string>
+    <string name="signup_subtitle">Your journey to the wilderness of life begins, we will be your guide.</string>
+    <string name="terms_and_conditions_sign_up">By signing up, you agree to our Terms aof Service and acknowledge that you have read our Privacy Policy to learn how we collect, use and share your data.</string>
+
+    <string name="sign_up_for_streamcamp">Sign up for Free</string>
+    <string name="email_login_button_text">Use phone or email</string>
+    <string name="loading_text">loading your camps..</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="streamcamp">StreamCamp</string>
+    <string name="your_streamcamp">Your StreamCamp</string>
+    <string name="campfires_on_board">CampFires on Board</string>
+    <string name="explore_camps">Explore Camps</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="sign_up">Sign up</string>
+    <string name="you_re_about_to_start_your_campfire">You\'re about to start your CampFire.</string>
+
+</resources>
