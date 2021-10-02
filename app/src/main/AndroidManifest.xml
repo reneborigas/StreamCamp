@@ -30,10 +30,21 @@
         android:theme="@style/Theme.StreamCamp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".SelectCampsActivity"
+            android:exported="true"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".PremiumActivity"
+            android:exported="true"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".GettingStartedActivity"
+            android:exported="true"
+            android:theme="@style/FullScreen" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="true"
             android:theme="@style/FullScreen" />
-
         <activity
             android:name=".CommunityStandardActivity"
             android:exported="true"

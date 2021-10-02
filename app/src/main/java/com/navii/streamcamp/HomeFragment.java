@@ -177,7 +177,7 @@ public class HomeFragment extends Fragment {
                                     Log.wtf("campMaster",campMaster.toString());
 
                                     videoList.add(new Video(object.getString("videoUrl"),
-                                            object.getString("name"),object.getString("subtitle"),campMaster.getString("userId"),object.getString("id"),campMaster.getString("name"),campMaster.getString("title")));
+                                            object.getString("name"),object.getString("subtitle"),campMaster.getString("userId"),object.getString("id"),campMaster.getString("name"),campMaster.getString("title"),object.getBoolean("isPremium"),object.getString("imageFile")));
 
                                 }
                             } catch (JSONException | IOException e) {

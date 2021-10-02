@@ -134,7 +134,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="top"
-            android:text="Advisor at Department of Health"
+            android:text="CampMaster at StreamCamp"
             android:textAlignment="gravity"
             android:textColor="@color/light_green"
             android:textSize="@dimen/text_size_small" />
@@ -227,11 +227,11 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
 
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/layout_round_bg_orange"
+            android:layout_marginBottom="20dp"
+
             android:onClick="onMuteAudioClicked"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_baseline_star_border_24"
+            android:src="@drawable/star_icon"
             tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
@@ -239,10 +239,9 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
 
-            android:background="@drawable/layout_round_bg_orange"
             android:onClick="onMuteAudioClicked"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_gifts"
+            android:src="@drawable/gift_icon"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 

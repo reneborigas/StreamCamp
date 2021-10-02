@@ -129,7 +129,7 @@ public class SignUpActivity extends AppCompatActivity {
                                 e.printStackTrace();
                             }
 
-                            Intent activity2Intent = new Intent(getApplicationContext(), MainActivity.class);
+                            Intent activity2Intent = new Intent(getApplicationContext(), GettingStartedActivity.class);
                             activity2Intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             finish();
                             startActivity(activity2Intent);

@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/asset_image" />
+
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="0dp"

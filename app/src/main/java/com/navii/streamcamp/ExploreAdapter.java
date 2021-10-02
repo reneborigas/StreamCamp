@@ -65,8 +65,8 @@ public class ExploreAdapter extends RecyclerView.Adapter<ExploreAdapter.ExploreV
                 @Override
                 public void onClick(View view) {
 
-                    Intent activity2Intent = new Intent(itemView.getContext(), LiveActivity.class);
-                    itemView.getContext().startActivity(activity2Intent);
+//                    Intent activity2Intent = new Intent(itemView.getContext(), LiveActivity.class);
+//                    itemView.getContext().startActivity(activity2Intent);
 
                 }
             });

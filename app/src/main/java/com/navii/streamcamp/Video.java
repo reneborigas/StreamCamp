@@ -1,9 +1,9 @@
 package com.navii.streamcamp;
 
 public class Video {
-    private String videoUrl, title, desc,campMasterID,campFireID,campMaster,campMasterTitle;
-
-    public Video(String videoUrl, String title, String desc,String campMasterID,String campFireID,String campMaster,String campMasterTitle) {
+    private String videoUrl, title, desc,campMasterID,campFireID,campMaster,campMasterTitle,imageURl;
+    boolean isPremium;
+    public Video(String videoUrl, String title, String desc,String campMasterID,String campFireID,String campMaster,String campMasterTitle,Boolean isPremium,String imageURl) {
         this.videoUrl = videoUrl;
         this.title = title;
         this.desc = desc;
@@ -11,6 +11,8 @@ public class Video {
         this.campFireID = campFireID;
         this.campMaster = campMaster;
         this.campMasterTitle = campMasterTitle;
+        this.isPremium = isPremium;
+        this.imageURl = imageURl;
 
 
     }
@@ -37,6 +39,14 @@ public class Video {
 
     public String getCampMaster() {
         return campMaster;
+    }
+
+    public boolean isPremium() {
+        return isPremium;
+    }
+
+    public String getImageURl() {
+        return imageURl;
     }
 
     public String getCampMasterTitle() {
